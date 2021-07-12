@@ -1,0 +1,617 @@
+@import url("reset.css");
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+header {
+    font-family: "Open Sans";
+    height: 600px;
+    background-color: hsl(176, 45%, 44%);
+}
+
+.fa-play {
+    font-size: 20px;
+    color: white;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
+span.change::after {
+    content: "";
+    color: hsl(176, 32%, 28%);
+    text-transform: uppercase;
+    opacity: 0;
+    animation: change-content 12s linear infinite,
+    change-opacity 12s linear infinite;
+}
+
+header h1::after,
+.we-create h2::after,
+.who-we h2::after,
+.develop-best h2:after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background-color: white;
+
+
+}
+
+.fa-chevron-down {
+    font-size: 40px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    animation: translate-y-chevron infinite 3s;
+}
+
+.we-create h2,
+.develop-best h2 {
+    font-family: "Open Sans";
+}
+
+.we-create h2::after,
+.develop-best h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.lorem p {
+    line-height: 1.4;
+}
+
+.learn-more .btn-block {
+    border-radius: 0;
+    background-color: hsl(176, 45%, 54%);
+    transition: 300ms 50ms ease-in;
+}
+
+#learn-more-sub, #learn-more-sub-sub{
+    position: relative;
+}
+
+#learn-more-sub-sub{
+overflow: hidden;
+}
+
+.learn-more .btn-block {
+    line-height: 50px;
+    height: 100px;
+}
+
+.learn-more .btn-block:hover {
+    background-color: hsl(176, 0%, 20%);
+}
+
+.learn-more .btn-block a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Open Sans";
+}
+
+.learn-due-z-index {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.learn-number {
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: hsl(176, 54%, 55%);
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+}
+
+.learn-number::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    animation: learn-number-scale infinite 2s;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+@keyframes learn-number-scale {
+    0% {
+        opacity: 1;
+        transform: none;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.learn-1 {
+    top: 30%;
+    left: 30%;
+}
+
+.learn-2 {
+    top: 55%;
+    left: 34%;
+}
+
+.learn-3 {
+    top: 63%;
+    left: 51%;
+}
+
+.learn-4 {
+    top: 32%;
+    left: 68%;
+}
+
+.tip-container {
+    padding: 0 20px 0 70px;
+}
+
+.tip-container>p {
+    border: 1px solid hsl(0, 0%, 60%);
+}
+
+.tip-container>p::after {
+    content: "";
+    position: absolute;
+    transform-origin: center;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-left: 1px solid hsl(0, 0%, 60%);
+    border-top: 1px solid hsl(0, 0%, 60%);
+
+}
+
+.customers-say h2,
+.who-we h2,
+.want-know h2 {
+    font-family: "Open Sans";
+}
+
+.customers-say h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.carousel p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.who-we {
+    background: url('../Images/hipster-working.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: 100%;
+    min-height: 450px;
+}
+
+.who-we p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.who-we h2::after {
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.develop-best {}
+
+.develop-best h2::after {
+    bottom: 0;
+}
+
+.develop-best {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+
+}
+
+.want-know {
+    background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.5)), url("../Images/desat-laptop.jpg") no-repeat center/cover fixed;
+}
+
+.want-know input {
+    border: 0;
+}
+
+.want-know input:focus {
+    box-shadow: none;
+}
+
+
+.branches {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.branches h4 {
+    font-size: 1rem;
+}
+
+.branches p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.branches ul a {
+    font-size: 1rem;
+    color: white;
+    padding: 4px;
+}
+
+footer a {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.social-apps span,
+.fa-twitter,
+.fa-rss {
+    font-size: 0.6rem;
+}
+
+.fa-twitter,
+.fa-rss {
+    font-size: 0.9rem;
+    color: white;
+    padding: 7px;
+    border-radius: 2px;
+    background-color: aqua;
+}
+
+.fa-rss {
+    background-color: orange;
+}
+
+.privacy-legal a:first-child {
+    border-right: solid 1px hsl(0, 0%, 30%);
+}
+
+footer a:hover {
+    color: hsl(0, 0%, 50%)
+}
+
+
+@keyframes translate-y-chevron {
+
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        bottom: 0px;
+        opacity: 0;
+    }
+
+    51%,
+    90% {
+        opacity: 0;
+
+    }
+
+
+    100% {
+        bottom: 25px;
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes change-content {
+
+    0%,
+    24% {
+        content: "Marketing";
+    }
+
+    25%,
+    49% {
+        content: "user experience";
+    }
+
+    50%,
+    74% {
+        content: "customer support";
+    }
+
+    75%,
+    100% {
+        content: "design skills"
+    }
+}
+
+@keyframes change-opacity {
+
+    5%,
+    21% {
+        opacity: 1;
+    }
+
+    23%,
+    25% {
+        opacity: 0;
+    }
+
+    30%,
+    44% {
+        opacity: 1;
+    }
+
+    49%,
+    51% {
+        opacity: 0;
+    }
+
+    55%,
+    69% {
+        opacity: 1;
+    }
+
+    74%,
+    76% {
+        opacity: 0;
+    }
+
+    80%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes slides-move {
+
+    0%,
+    40% {
+        transform: none;
+    }
+
+    53%,
+    98.999% {
+        transform: translateX(-100%);
+        animation-timing-function: ease-out;
+    }
+
+    99% {
+        transform: translateX(-200%);
+    }
+}
+
+
+/*------------------------------
+-------------------------------*/
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .nav-primary nav {
+        background-color: hsl(176, 45%, 52%);
+
+    }
+
+    .tip-container>p:after {
+        left: 0;
+        top: 25%;
+        transform: translatex(-50%) rotate(-45deg);
+    }
+
+    .tip-container>p {
+        position: relative;
+    }
+
+    .tip-container>p::before {
+        content: attr(data-number);
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align-last: center;
+        border: 1px solid hsl(0, 0%, 60%);
+        border-radius: 50%;
+        top: 0;
+        left: -55px;
+    }
+
+    .develop-best .top-img {
+        width: 100%;
+    }
+
+    .develop-best .top-img img {
+        width: 90%;
+    }
+
+    .develop-best-slides {
+        width: 100%;
+        animation: slides-move infinite 10s ease-in;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .develop-best-slides div {
+        flex: 1 0 100%;
+    }
+
+    .develop-best .bottom-imgs {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .develop-best .bottom-imgs img {
+        width: 50%;
+    }
+
+
+}
+
+/*---------------------------------------*/
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    body .nav-primary nav {
+        background-color: hsl(176, 0%, 15%);
+    }
+}
+
+/*---------------------------------------*/
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .nav-primary nav {
+        background-color: hsl(176, 45%, 44%);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header {
+        margin-top: 50px;
+    }
+
+    .tip-container>p {
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    .tip-container>p:nth-child(1) {
+        top: 7%;
+        left: 8%;
+        width: 220px;
+    }
+
+    .tip-container>p:nth-child(2) {
+        top: 48%;
+        left: 16%;
+        width: 150px;
+    }
+
+    .tip-container>p:nth-child(3) {
+        top: 56%;
+        left: 54%;
+        width: 220px;
+    }
+
+    .tip-container>p:nth-child(4) {
+        top: 25%;
+        left: 71%;
+        width: 150px;
+    }
+
+    .tip-container>p:nth-child(1)::after {
+        left: 90%;
+        top: 100%;
+        transform: translateY(-50%) rotate(-135deg);
+
+    }
+
+    .tip-container>p:nth-child(2)::after {
+        left: 100%;
+        top: 25%;
+        transform: translatex(-50%) rotate(135deg);
+
+    }
+
+    .tip-container>p:nth-child(3)::after {
+        left: 0;
+        top: 25%;
+        transform: translatex(-50%) rotate(-45deg);
+
+    }
+
+    .tip-container>p:nth-child(4)::after {
+        left: 0;
+        top: 25%;
+        transform: translatex(-50%) rotate(-45deg);
+
+    }
+
+    .develop-best-slides {
+        animation: slides-move infinite 10s ease-in;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 2px;
+    }
+
+    .develop-best-slides>div {
+        flex: 0 0 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .develop-best-slides .top-img {
+        width: 20%;
+        flex: 0 0 20%;
+    }
+
+    .develop-best-slides .top-img img {
+        width: 100%;
+    }
+
+
+    .develop-best .bottom-imgs {
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .develop-best .bottom-imgs img {
+        width: 20%;
+        flex: 1 1 20%;
+    }
+
+    .branches>div>div:not(:last-child) {
+        flex: 1 0 25%;
+    }
+
+    .want-know h2 {
+        width: 50%;
+    }
+
+}
